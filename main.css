@@ -1,0 +1,9 @@
+body{
+  background-color: black;
+}
+h1{
+    color: rgb(16, 230, 245);
+    font-family: 'Suez One', serif;
+    font-size: 60px;
+    text-align: center;
+}
