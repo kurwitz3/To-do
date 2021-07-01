@@ -35,20 +35,21 @@ h1{
 }
 
 .card{
-    background-color: rgb(16, 245, 100);
+    background-color: rgb(16, 230, 245);
     height: 300px;
     width: 100%;
     border-radius: 40px;
 }
 
-#work-list-title{
+.list-title{
     font-family: 'Suez One', serif;
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
 }
 
 #home-task-div, 
-#grocery-list-div{
+#grocery-list-div,
+#amazon-list-div{
     margin-top: 40px;
 }
 
