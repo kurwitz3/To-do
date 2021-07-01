@@ -58,6 +58,10 @@ h1{
     height: 300px;
     width: 100%;
     border-radius: 40px;
+    overflow:auto;
+
+
+  
 }
 
 .work-li{

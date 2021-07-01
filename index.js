@@ -8,12 +8,15 @@ document.addEventListener('DOMContentLoaded',function(){
 function addWorkTask(){
     const workInput = document.querySelector('input')
     const workOl = document.getElementById('work-ol')
-    const workLi = document.createElement('li')
-    workLi.setAttribute('class','work-li')
+    
   workButton.addEventListener('click',() =>{
+    let workLi = document.createElement('li')
+    workLi.setAttribute('class','work-li')
+    const completeButton = document.createElement('button')
+    completeButton.innerText = 'Completed Task'
     workLi.innerText = workInput.value
-    workOl.appendChild(workLi)
-
+    workOl.append(workLi,completeButton)
+    workInput.value = ''
 })
  
 }
