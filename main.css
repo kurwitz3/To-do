@@ -20,6 +20,7 @@ h1{
     font-size: 20px;
     font-family: 'Suez One', serif;
     background-color:rgb(16, 230, 245);
+    margin-top: 20px;
     width: 50%;
     height:20px;
     padding-top: 10px;
@@ -59,9 +60,6 @@ h1{
     width: 100%;
     border-radius: 40px;
     overflow:auto;
-
-
-  
 }
 
 .work-li{
@@ -73,6 +71,10 @@ h1{
     color:rgb(16, 230, 245);
     background-color: black;
    margin-left: 30px;
+}
+
+form{
+    margin-top: 40px;
 }
 
 
