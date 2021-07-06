@@ -5,46 +5,60 @@ body{
   background-attachment: fixed;
 }
 h1{
-    color: rgb(16, 230, 245);
+    color: black;
     font-family: 'Suez One', serif;
     font-size: 60px;
-    text-align: center;
+    margin-left: 90px;
+   
+}
+#input, #Add-task-input, #button{
+    float: none; /* if you had floats before? otherwise inline-block will behave differently */
+    display: inline-block;
+    vertical-align: middle;    
 }
 
 #Add-task-input{
-    color:rgb(16, 245, 100);
+    color:black;
     font-family: 'Suez One', serif;
-    font-size: 35px;
+    font-size: 40px;
     padding-right: 10px;
-    margin-left: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+    
 }
 
 #input{
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Suez One', serif;
-    background-color:rgb(16, 230, 245);
     margin-top: 20px;
-    width: 50%;
-    height:20px;
+    width: 30%;
     padding-top: 10px;
    border-radius:8px;
 }
 
 #button{
-    background-color:rgb(16, 245, 100);
+    color: white;
+    background-color:black;
     font-family: 'Suez One', serif;
     font-size: 30px;
     border-radius: 10px;
-    margin: 10px
+    margin-top: 20px
 }
 
-
+#card{
+    background-color: black;
+    width: 60%;
+    height: 400px;
+    border-radius: 40px;
+    margin-top: 120px;
+    
+    overflow: auto;
+}
 
 .list-title{
-    color:rgb(16, 230, 245);
+    color:white;
     font-family: 'Suez One', serif;
     font-size: 35px;
-    text-align: center;
 }
 
 #home-task-div, 
@@ -62,13 +76,11 @@ h1{
 }
 
 .work-li{
-    color:white;
-    background-color: black;
+    color:white; 
     margin-bottom: 30px;
     font-size: 23px;
     font-family: 'Suez One', serif;
-    text-align: center;
-    list-style-position: inside;
+    
 }
 
 .work-complete-button{
