@@ -9,41 +9,16 @@
     <body>
        <h1>My Weekly To Do List</h1>
        <form>
-           <label class="Add-task-input">Add Work Task:</label>
-           <input class="input"></input>
-           <button class='button'>Create Task</button>
+           <label id="Add-task-input">Add Work Task:</label>
+           <input id="input"></input>
+           <button id='button'>Create Task</button>
        </form>
         <div class='card'>
             <h2 class="list-title">This is what I need to accomplish this week at work!</h2>
-            <ol class='work-ol'></ol>
-        </div>
-        <form>
-            <label class="Add-task-input">Add Home Task:</label>
-            <input class="input"></input>
-            <button class='button'>Create Task</button>
-        </form>
-         <div class='card'>
-            <h2 class="list-title">This is what I need to accomplish this week at Home!</h2>
-            <ol class='work-ol'></ol>
-        </div>
-        <form>
-            <label class="Add-task-input">Add Item To Grocery List:</label>
-            <input class="input"></input>
-            <button class='button'>Create Item</button>
-        </form>
-         <div class='card'>
-            <h2 class="list-title">Grocery List</h2>
-            <ol class='work-ol'></ol>
-        </div>
-        <form>
-            <label class="Add-task-input">Add Item To Amazon List:</label>
-            <input class="input"></input>
-            <button class='button'>Create Item</button>
-        </form>
-         <div class='card'>
-            <h2 class="list-title">Amazon List</h2>
-            <ol class='work-ol'></ol>
+            <ol id='work-ol'></ol>
         </div>
         <script type='text/javascript' src='index.js'></script>
+        <script type='text/javascript' src='models/ToDo.js'></script>
+        <script type='text/javascript' src='services/API.js'></script>
     </body>
 </html>
