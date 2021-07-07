@@ -29,8 +29,5 @@ class API{
        return fetch(`http://localhost:3000/to_dos/${id}`, {
             method: 'delete'
           })
-
-       
-      
     }
 }

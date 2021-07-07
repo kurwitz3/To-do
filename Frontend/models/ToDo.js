@@ -18,7 +18,6 @@ class ToDo{
         API.deleteTodo(todoId)
         element.remove()
       })
-      
     }
     
     static createLi(input){
@@ -38,10 +37,7 @@ class ToDo{
           e.target.form.elements[0].value = ""
         })
     }
-    
-    static deleteButton(){
-     
-    }
+
   
 
 
