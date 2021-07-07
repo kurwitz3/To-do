@@ -9,7 +9,7 @@ class ToDo{
     static appendDeleteButton(element){
       const completeButton = document.createElement('button')
       completeButton.setAttribute('class','work-complete-button')
-      completeButton.innerText = 'Complete Task'
+      completeButton.innerText = 'Task Completed'
       element.appendChild(completeButton)
     }
     
