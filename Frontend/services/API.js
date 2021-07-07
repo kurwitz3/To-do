@@ -3,9 +3,10 @@ class API{
         return fetch('http://localhost:3000/to_dos',)
         .then(resp => resp.json())
         .then(json => {
-           for(let i = 0; i< Object.values(json).length; i++) 
-              ToDo.createLi(Object.values(json)[i].listItem)
-         } )
+            json.forEach(todo => {
+                new ToDo(todo)
+            })
+        })
     }
     static createToDo(input){
         const formData={
@@ -22,5 +23,14 @@ class API{
         fetch('http://localhost:3000/to_dos',configObj)
         .then(resp => resp.json())
         .then(json => new ToDo(json))
+    }
+
+    static deleteTodo(id){
+       return fetch(`http://localhost:3000/to_dos/${id}`, {
+            method: 'delete'
+          })
+
+       
+      
     }
 }

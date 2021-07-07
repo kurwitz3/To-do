@@ -4,13 +4,21 @@ class ToDo{
         this.id = id
         this.listItem = listItem
         ToDo.allToDos.push(this)
+        ToDo.createLi(this.listItem)
     }
-
+    
     static appendDeleteButton(element){
+      let todoId = ToDo.allToDos[this.allToDos.length -1].id
       const completeButton = document.createElement('button')
       completeButton.setAttribute('class','work-complete-button')
+      completeButton.setAttribute('id',`${todoId}`)
       completeButton.innerText = 'Task Completed'
       element.appendChild(completeButton)
+      completeButton.addEventListener('click',() => {
+        API.deleteTodo(todoId)
+        element.remove()
+      })
+      
     }
     
     static createLi(input){
@@ -27,15 +35,12 @@ class ToDo{
           const workInput = document.getElementById('input').value
           e.preventDefault()
           API.createToDo(workInput)
-          ToDo.createLi(workInput)
           e.target.form.elements[0].value = ""
         })
     }
     
     static deleteButton(){
-      workOl.addEventListener('click',function(e){
-        e.target.closest('li').remove()
-      })
+     
     }
   
 
